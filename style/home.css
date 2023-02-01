@@ -54,7 +54,11 @@ nav a {
     transition-duration: .5s;
 }
 
-nav, .linkedin > a:hover {
+nav a:hover {
+    color: red;
+}
+
+.linkedin a:hover {
     color: red;
 }
 
@@ -135,7 +139,7 @@ img {
     max-width: 35%;
     border-radius: 50%;
 
-    left: 65%;
+    left: 63%;
     transform: translate(-15%, -60%);
 }
 

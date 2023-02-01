@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Krub');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+:root {
+    --cor0: #B5B5B5;
+    --cor1: #694949;
+    --cor2: #E8E8E8;
+    --cor3: #ECA5A5;
+    --cor4: #000000;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Krub', cursive;
+    --font-alternativa: 'Varela+Round', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--font-destaque);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+    min-height: 60px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--font-alternativa);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.295); /*sombra no texto*/
+}
+
+nav {
+    background-color: var(--cor1);
+    text-align: right;
+    padding: 8px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.329);
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.linkedin a:hover {
+    color: red;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+
+    min-width: 320px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 45px;
+    color: var(--cor4);
+}
+
+.projetos {
+    padding-top: 30px;
+}
+
+.projetos h2, .projetos a {
+    text-align: center;
+}
+
+.projetos h2 {
+    padding-bottom: 70px;
+}
+
+button {
+    padding: 10px 100px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #8E5D52;
+    border: none;
+    transition: ease-in-out 0.3s;
+}
+
+button:hover {
+    background-color: #a16c60;
+}
+
+.github-link {
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 93px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.projetos a {
+    display: inline;
+}
+
+.pro {
+    background-color: #C4C4C4;
+    height: 195px;
+    width: 310px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+}
+
+.pro div p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    color: #C4C4C4;
+}
+
+.pro:hover {
+    letter-spacing: 5px;
+}
+
+.pro div {
+    background-color: #705656;
+    width: 1000px;
+    text-align: center;
+    padding: 5% 0;
+    transform: rotate(-50deg);
+}
+
+.escondido {
+    opacity: 0;
+    display: none;
+    transition: 1000ms;
+}
+
+.projetos-itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29.5px;
+    width: 100%;
+    justify-content: center;
+}
+
+@media (max-width:1200px) {
+  .projetos{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+  }
+
+  #projetos {
+      display: flex;
+      justify-content: center;
+  }
+
+  .projetos-itens {
+      flex-direction: column;
+  }
+
+}
+@media (max-width:950px) {
+    .pro {
+        max-width: 300px;
+    }
+
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    padding-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.425);
+}
