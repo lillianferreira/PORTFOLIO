@@ -214,7 +214,7 @@ estilo máquina de escrever somente com CSS
 
 .meu-nome {
     font-size: 35px;
-    font-family: var(--font-destaque);
+    font-family: 'Press Start 2P', cursive;
 }
 
 .meu-nome::after{

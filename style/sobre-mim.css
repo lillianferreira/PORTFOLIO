@@ -54,6 +54,40 @@ nav a {
     transition-duration: .5s;
 }
 
-nav, .linkedin > a:hover {
+nav a:hover {
     color: red;
+}
+
+.linkedin a:hover {
+    color: red;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+
+    min-width: 320px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 45px;
+    color: var(--cor4);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    padding-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.425);
 }
