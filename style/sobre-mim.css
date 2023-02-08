@@ -77,9 +77,50 @@ h2 {
     color: var(--cor4);
 }
 
-img {
-    width: 100px;
-    height: 100px;
+.conteudo {
+    display: table;
+}
+
+.imagem {
+    display: table-cell;
+    float: left;
+    width: 323px;
+    height: 368px;
+    position: relative;
+    cursor: pointer;
+    transition: ease 1s;
+    margin-top: 27px;
+    margin-left: 10px;
+}
+
+.imagem:hover {
+    transform: scale(1.05);
+}
+
+.desenho-bg {
+    width: 420px;
+    height: 420px;
+/*  visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: opacity 3s cubic-bezier(0.5, 0, 0, 1) 0s, transform 3s cubic-bezier(0.5, 0, 0, 1) 0s;
+*/
+}
+
+.sobre-mim {
+    display: table-cell;
+    /*vertical-align: top;*/
+    float: left;
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 140px;
+}
+
+p {
+    padding: 10px;
+    line-height: 25px;
+    text-align: justify;
+    text-indent: 2em;
 }
 
 footer {

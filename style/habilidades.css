@@ -77,8 +77,53 @@ h2 {
     color: var(--cor4);
 }
 
+.container {
+    position: absolute;
+}
 
+img {
+    width: 100px;
+    height: 100px;
+}
 
+@keyframes html {
+    0% {
+        bottom: 0;
+        left: 250px;
+    }
+    100% {
+        bottom: 0;
+        left: 50px;
+    }
+}
+
+@keyframes css {
+    0% {
+        bottom: 0;
+        left: 50px;
+    }
+    100% {
+        bottom: 0;
+        left: 250px;
+    }
+}
+
+.html {
+    bottom: 0;
+    left: 0;
+    animation: html 3s infinite linear alternate-reverse ;
+}
+
+.js {
+    bottom: 0;
+    left: 150px;
+}
+
+.css {
+    bottom: 0;
+    left: 300px;
+    animation: css 3s infinite linear alternate-reverse;
+}
 
 footer {
     background-color: var(--cor5);
