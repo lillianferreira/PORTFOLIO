@@ -64,6 +64,7 @@ nav a:hover {
 
 main {
     background-color: white;
+    height: 80vh;
     padding: 20px;
 
     min-width: 320px;
@@ -75,12 +76,26 @@ h2 {
     font-family: 'Press Start 2P', cursive;
     font-size: 45px;
     color: var(--cor4);
+    text-align: center;
+    padding-top: 20px;
 }
 
 ul {
     list-style: none;
+    text-align: center;
 }
 
+.container {
+    height: 60vh;
+    position: relative;
+}
+
+.elemento {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 footer {
     background-color: var(--cor5);

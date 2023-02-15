@@ -64,6 +64,7 @@ nav a:hover {
 
 main {
     background-color: white;
+    height: 80vh;
     padding: 20px;
 
     min-width: 320px;
@@ -77,16 +78,12 @@ h2 {
     color: var(--cor4);
 }
 
-.projetos {
-    padding-top: 30px;
-}
-
 .projetos h2, .projetos a {
     text-align: center;
 }
 
 .projetos h2 {
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
 
 button {
@@ -104,7 +101,7 @@ button:hover {
 
 .github-link {
     margin: 0 auto;
-    padding-top: 35px;
+    padding-top: 50px;
     padding-bottom: 93px;
     display: flex;
     flex-wrap: wrap;
@@ -160,6 +157,7 @@ button:hover {
     gap: 29.5px;
     width: 100%;
     justify-content: center;
+    padding-top: 10px;
 }
 
 @media (max-width:1200px) {

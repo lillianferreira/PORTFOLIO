@@ -64,6 +64,7 @@ nav a:hover {
 
 main {
     background-color: white;
+    height: 80vh;
     padding: 20px;
 
     min-width: 320px;
@@ -100,11 +101,6 @@ h2 {
 .desenho-bg {
     width: 420px;
     height: 420px;
-/*  visibility: visible;
-    opacity: 1;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transition: opacity 3s cubic-bezier(0.5, 0, 0, 1) 0s, transform 3s cubic-bezier(0.5, 0, 0, 1) 0s;
-*/
 }
 
 .sobre-mim {
@@ -112,7 +108,7 @@ h2 {
     /*vertical-align: top;*/
     float: left;
     width: 500px;
-    margin-top: 10px;
+
     margin-left: 140px;
 }
 

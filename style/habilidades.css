@@ -64,6 +64,7 @@ nav a:hover {
 
 main {
     background-color: white;
+    height: 80vh;
     padding: 20px;
 
     min-width: 320px;
@@ -71,19 +72,40 @@ main {
     margin: auto;
 }
 
+.container {
+    position: relative;
+}
+
+.conteudo {
+    display: table-cell;
+    position: relative;
+}
+
 h2 {
+    text-align: center;
     font-family: 'Press Start 2P', cursive;
     font-size: 45px;
     color: var(--cor4);
+    padding-top: 20px;
 }
 
-.container {
+ul {
+    padding-left: 270px;
+    padding-top: 30px;
+    list-style-type: none;
+    line-height: 2em;
+}
+
+.circulo {
     position: absolute;
+    top: 50px;
+    right: -120px;
 }
 
 img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
+    padding: 20px;
 }
 
 @keyframes html {
