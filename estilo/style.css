@@ -513,6 +513,7 @@ footer a:hover {
     }
 
     .ajustador-2 {
+        height: 40vh;
         justify-content: center;
     }
 
@@ -534,8 +535,7 @@ footer a:hover {
     }
 
     #sobre-mim {
-        height: 400px;
-        height: 40vh;
+        height: 75vh;
         justify-content: center;
     }
 
