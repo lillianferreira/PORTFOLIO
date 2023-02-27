@@ -129,7 +129,7 @@ section.fundo > p {
 
 /*Meu nome*/
 #inicio {
-    height: 180vh;
+    height: 100vh;
 }
 
 .ajustador {
@@ -467,15 +467,6 @@ footer a:hover {
         overflow-x: hidden;
     }
 
-    #inicio {
-        height: 65vh;
-        align-items: center;
-    }
-
-    #inicio .meunome {
-        font-size: 15px;
-    }
-
     nav {
         flex-direction: row;
         justify-content: space-around;
@@ -494,7 +485,7 @@ footer a:hover {
 
     header {
         width: 100%;
-        height: 35vh;
+        height: 25vh;
         justify-content: center;
     }
 
@@ -507,6 +498,19 @@ footer a:hover {
         max-width: 768px;
     }
 
+    #inicio {
+        height: 45vh;
+        align-items: center;
+    }
+
+    .ajustador p {
+        font-size: 18px;
+    }
+
+    .meunome {
+        font-size: 25px;
+    }
+
     .linkedin {
         width: 150px;
         height: 55px;
@@ -514,10 +518,6 @@ footer a:hover {
 
     .ajustador-2 {
         justify-content: center;
-    }
-
-    h2 {
-        font-size: 15px;
     }
 
     .img01 {
@@ -530,7 +530,7 @@ footer a:hover {
     }
 
     #sobre-mim {
-        height: 75vh;
+        height: 40vh;
         justify-content: center;
     }
 
