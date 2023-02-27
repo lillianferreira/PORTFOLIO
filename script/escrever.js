@@ -1,9 +1,9 @@
 const meuNome = document.querySelector('.meu-nome');
-const fName = meuNome.innerHTML;
+
 const botaoVerMais = document.querySelector('button');
 const habilidades = document.querySelectorAll('.escondido');
 const node = document.querySelector('#fundo')
-meuNome.innerHTML='';
+
 
 function cliqueVer (botaoVerMais) {
     habilidades.forEach( (elemento) => {
