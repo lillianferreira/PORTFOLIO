@@ -468,12 +468,12 @@ footer a:hover {
     }
 
     #inicio {
-        height: 100vh;
+        height: 65vh;
         align-items: center;
     }
 
     #inicio .meunome {
-        font-size: 23px;
+        font-size: 15px;
     }
 
     nav {
@@ -494,7 +494,7 @@ footer a:hover {
 
     header {
         width: 100%;
-        height: 25vh;
+        height: 35vh;
         justify-content: center;
     }
 
@@ -513,16 +513,15 @@ footer a:hover {
     }
 
     .ajustador-2 {
-        height: 40vh;
         justify-content: center;
     }
 
     h2 {
-        font-size: 25px;
+        font-size: 15px;
     }
 
     .ajustador-2 p {
-        font-size: 20px;
+        font-size: 10px;
     }
 
     .img01 {
