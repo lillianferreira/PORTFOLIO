@@ -85,9 +85,7 @@ nav li {
 main {
     min-width: 300px;
     max-width: 1200px;
-    margin: auto;
-
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.315);
+    margin: 0 auto;
 }
 
 section {
@@ -142,9 +140,9 @@ section.fundo > p {
     font-size: 42px;
     white-space: nowrap;
     overflow: hidden;
-    animation: typewriter 3.2s steps(24) infinite alternate,
-      blink 800ms steps(24) infinite normal;
-    border-right: 5px solid black;
+    animation: typewriter 3.2s steps(23) infinite alternate,
+      blink 800ms steps(23) infinite normal;
+    border-right: 3px solid black;
 }
 
 @keyframes typewriter {
@@ -213,78 +211,6 @@ section.fundo > p {
     transition: ease-in-out 0.3s;
 }
 
-@media screen and (max-width: 768px) {
-    #inicio {
-        height: 300px;
-        height: 60vh;
-    }
-
-    html, body {
-        width: 91%;
-        margin: 0;
-        padding: 0;
-    }
-
-    nav {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    nav a {
-        flex-direction: row;
-    }
-
-    nav li {
-        display: list-item;
-        text-align: center;
-        line-height: 1.5em;
-        font-size: 15px;
-    }
-
-    header {
-        width: 94vw;
-        height: 300px;
-        height: 38vh;
-        justify-content: center;
-    }
-
-    main {
-        width: 100%;
-        margin: auto;
-    }
-
-    section {
-        width: 100%;
-    }
-
-    .linkedin {
-        width: 150px;
-        height: 55px;
-    }
-
-    .ajustador-2 {
-        justify-content: center;
-    }
-
-    .container-a {
-        margin-right: 30px;
-    }
-
-    h2 {
-        font-size: 25px;
-    }
-
-    .ajustador-2 p {
-        font-size: 20px;
-    }
-
-    .sobre-mim p {
-        text-indent: 0;
-    }
-}
-
-
-
 /*Sobre mim*/
 .titulo-a {
     text-align: center;
@@ -327,33 +253,6 @@ section.fundo > p {
     height: 420px;
     transform: translate(165%, 5%);
 }
-
-@media screen and (max-width: 768px) {
-    #sobre-mim {
-        height: 430px;
-        height: 45vh;
-        justify-content: center;
-        min-height: 250px;
-    }
-
-    #sobre-mim p {
-        font-size: 15px;
-        justify-content: center;
-        text-align: justify;
-    }
-
-    .container-a {
-        display: none;
-    }
-
-    .container-c {
-        font-size: 15px;
-        justify-content: center;
-        text-align: justify;
-        word-wrap: break-word;
-    }
-}
-
 
 /*Projetos*/
 .centralizador {
@@ -452,36 +351,6 @@ button:hover {
     justify-content: center;
 }
 
-@media (max-width:768px) {
-  .project {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      font-size: 28px;
-  }
-
-  #projetos {
-      display: flex;
-      justify-content: center;
-  }
-
-  .projetos h2 {
-    padding-bottom: 40px;
-  }
-
-  .projetos-itens {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .github-link {
-    align-items: center;
-  }
-
-}
-
-
-
 /*Habilidades*/
 .fundo > h2 {
     text-align: center;
@@ -564,7 +433,155 @@ button:hover {
     animation: css 3s infinite linear alternate-reverse;
 }
 
+/*Contato*/
+.contato {
+    text-align: center;
+}
+
+.elemento {
+    padding-left: 50px;
+    text-align: center;
+}
+
+.elemento > ul {
+    list-style-type: none;
+    line-height: 1.3em;
+    font-size: 32px;
+}
+
+/*Footer*/
+footer {
+    background-color: var(--cor1);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    width: 100%;
+}
+
+footer a:hover {
+    color: red;
+}
+
 @media screen and (max-width: 768px) {
+    body, html {
+        overflow-x: hidden;
+    }
+
+    #inicio {
+        height: 300px;
+        height: 40vh;
+        align-items: center;
+    }
+
+    #inicio .meunome {
+        font-size: 23px;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav a {
+        flex-direction: row;
+    }
+
+    nav li {
+        display: list-item;
+        text-align: center;
+        line-height: 1.5em;
+        font-size: 15px;
+    }
+
+    header {
+        width: 100%;
+        height: 25vh;
+        justify-content: center;
+    }
+
+    main {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    section {
+        max-width: 768px;
+    }
+
+    .linkedin {
+        width: 150px;
+        height: 55px;
+    }
+
+    .ajustador-2 {
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .ajustador-2 p {
+        font-size: 20px;
+    }
+
+    .img01 {
+        border-radius: 50%;
+        position: relative;
+        animation: desenhoAnimacao 1.8s infinite alternate-reverse linear;
+
+        width: 30%;
+        transform: translate(220%, -120%);
+    }
+
+    #sobre-mim {
+        height: 400px;
+        height: 40vh;
+        justify-content: center;
+    }
+
+    .container-a {
+        display: none;
+    }
+
+    .container-b p {
+        font-size: 18px;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    .container-c {
+        font-size: 18px;
+        justify-content: center;
+        text-align: justify;
+        word-wrap: break-word;
+    }
+
+    .project {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 28px;
+    }
+
+    #projetos {
+        display: flex;
+        justify-content: center;
+    }
+
+    .projetos h2 {
+      padding-bottom: 40px;
+    }
+
+    .projetos-itens {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .github-link {
+      align-items: center;
+    }
+
     .coluna-50 li {
         font-size: 20px;
         text-align: center;
@@ -625,83 +642,137 @@ button:hover {
             left: 210px;
         }
     }
-}
 
-
-
-/*Contato*/
-.contato {
-    text-align: center;
-}
-
-.elemento {
-    padding-left: 50px;
-    text-align: center;
-}
-
-.elemento > ul {
-    list-style-type: none;
-    line-height: 1.3em;
-    font-size: 32px;
-}
-
-@media screen and (max-width: 768px) {
     #contato h2 {
         text-align: center;
+        font-size: 30px;
     }
 
     .elemento li {
         font-size: 20px;
         align-items: center;
     }
-}
 
-/*Footer*/
-footer {
-    background-color: var(--cor1);
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-footer a:hover {
-    color: red;
-}
-
-@media screen and (max-width: 768px) {
     footer {
-       width: 113%;
+        width: 113.5%;
     }
 }
 
-@media screen and (max-width: 500px) {
-    nav {
-        height: 100vh;
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+    body, html {
+        overflow-x: hidden;
     }
 
-    #sobre-mim p {
-        font-size: 12px;
-        line-height: 1.5em;
-    }
-
-    .container-c {
-        font-size: 12px;
-        line-height: 1.5em;
-    }
-
-    .img01 {
-        display: none;
+    #inicio {
+        height: 60vh;
     }
 
     .circulo {
-        display: none;
+        position: relative;
+        top: 55px;
+        left: 120px;
     }
 
-    #back {
-        padding-top: 20px;
+    .circulo > img {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        padding: 10px;
+        transform: translate(-80%, -510%);
     }
 
-    footer {
-        width: 96vw;
+    @keyframes html {
+        0% {
+            bottom: 0;
+            left: 250px;
+        }
+        100% {
+            bottom: 0;
+            left: 50px;
+        }
+    }
+
+    @keyframes css {
+        0% {
+            bottom: 0;
+            left: 50px;
+        }
+        100% {
+            bottom: 0;
+            left: 250px;
+        }
+    }
+
+    .html {
+        bottom: 0;
+        left: 0;
+        animation: html 3s infinite linear alternate-reverse ;
+    }
+
+    .js {
+        bottom: 0;
+        left: 150px;
+    }
+
+    .css {
+        bottom: 0;
+        left: 300px;
+        animation: css 3s infinite linear alternate-reverse;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1280px) {
+    .circulo {
+        position: relative;
+        top: 73px;
+        left: 120px;
+    }
+
+    .circulo > img {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        padding: 10px;
+        transform: translate(-80%, -510%);
+    }
+
+    @keyframes html {
+        0% {
+            bottom: 0;
+            left: 250px;
+        }
+        100% {
+            bottom: 0;
+            left: 50px;
+        }
+    }
+
+    @keyframes css {
+        0% {
+            bottom: 0;
+            left: 50px;
+        }
+        100% {
+            bottom: 0;
+            left: 250px;
+        }
+    }
+
+    .html {
+        bottom: 0;
+        left: 0;
+        animation: html 3s infinite linear alternate-reverse ;
+    }
+
+    .js {
+        bottom: 0;
+        left: 150px;
+    }
+
+    .css {
+        bottom: 0;
+        left: 300px;
+        animation: css 3s infinite linear alternate-reverse;
     }
 }
