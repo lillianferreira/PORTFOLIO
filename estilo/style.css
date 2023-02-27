@@ -654,7 +654,15 @@ footer a:hover {
 
 
 @media screen and (min-width: 1201px) and (max-width: 1400px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-size: 1em;
+    }
+
     body, html {
+        background-color: darkgray;
+        font-family: var(--fonte1);
         overflow-x: hidden;
     }
 
