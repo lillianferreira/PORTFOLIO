@@ -129,7 +129,7 @@ section.fundo > p {
 
 /*Meu nome*/
 #inicio {
-    height: 100vh;
+    height: 180vh;
 }
 
 .ajustador {
@@ -518,10 +518,6 @@ footer a:hover {
 
     h2 {
         font-size: 15px;
-    }
-
-    .ajustador-2 p {
-        font-size: 10px;
     }
 
     .img01 {
