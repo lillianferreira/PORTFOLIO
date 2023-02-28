@@ -463,6 +463,11 @@ footer a:hover {
 }
 
 @media screen and (max-width: 768px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
     body, html {
         overflow-x: hidden;
     }
@@ -485,7 +490,7 @@ footer a:hover {
 
     header {
         width: 100%;
-        height: 25vh;
+        height: 39vh;
         justify-content: center;
     }
 
@@ -499,7 +504,7 @@ footer a:hover {
     }
 
     #inicio {
-        height: 80vh;
+        height: 65vh;
         align-items: center;
     }
 
@@ -530,7 +535,7 @@ footer a:hover {
     }
 
     #sobre-mim {
-        height: 50vh;
+        height: 65vh;
         justify-content: center;
     }
 
@@ -777,3 +782,82 @@ footer a:hover {
         animation: css 3s infinite linear alternate-reverse;
     }
 }
+
+@media screen and (min-width: 1405px) and (max-width: 2300px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body, html {
+        background-color: darkgray;
+        font-family: var(--fonte1);
+        overflow-x: hidden;
+    }
+
+    section {
+        padding-bottom: 5vh;
+    }
+
+    #inicio {
+        height: 65vh;
+    }
+
+    .ajustador p {
+        font-size: 15px;
+    }
+
+    .circulo {
+        position: relative;
+        /*top: 85px;*/
+        left: 720px;
+    }
+
+    .circulo > img {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        padding: 10px;
+        transform: translate(-80%, -510%);
+    }
+
+    @keyframes html {
+        0% {
+            bottom: 0;
+            left: 250px;
+        }
+        100% {
+            bottom: 0;
+            left: 50px;
+        }
+    }
+
+    @keyframes css {
+        0% {
+            bottom: 0;
+            left: 50px;
+        }
+        100% {
+            bottom: 0;
+            left: 250px;
+        }
+    }
+
+    .html {
+        bottom: 0;
+        left: 0;
+        animation: html 3s infinite linear alternate-reverse ;
+    }
+
+    .js {
+        bottom: 0;
+        left: 150px;
+    }
+
+    .css {
+        bottom: 0;
+        left: 300px;
+        animation: css 3s infinite linear alternate-reverse;
+    }
+}
+
