@@ -63,6 +63,7 @@ nav {
     text-align: right;
     padding: 8px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.329);
+    list-style-type: none;
 }
 
 nav a {
@@ -439,7 +440,6 @@ button:hover {
 }
 
 .elemento {
-    padding-left: 50px;
     text-align: center;
 }
 
@@ -454,7 +454,7 @@ footer {
     background-color: var(--cor1);
     color: white;
     text-align: center;
-    padding: 8px;
+
     width: 100%;
 }
 
